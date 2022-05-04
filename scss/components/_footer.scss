@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+.footer{
+    background: $background_nav;
+    margin-top: 2rem;
+    &__content{
+        @include flexbox(row, space-between, center);
+        i{
+            margin-left: 2rem;
+        }
+        .footer__text{
+            color: white;
+            font-family: $font_main;
+        }
+    }
+}

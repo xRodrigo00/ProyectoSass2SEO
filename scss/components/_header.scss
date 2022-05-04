@@ -1,0 +1,24 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.header {
+  background: $background_nav;
+  .container {
+    @include flexbox(row, space-between, center);
+  }
+  .navbar {
+    @include flexbox(row, space-between, center);
+    &_item {
+      list-style: none;
+      margin-left: 3rem;
+      font-size: 1.3rem;
+    }
+    & a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: rgb(32, 40, 37);
+      }
+    }
+  }
+}

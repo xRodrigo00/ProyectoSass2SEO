@@ -1,0 +1,10 @@
+/* VARIABLES */
+@use "../scss/abstracts/variables";
+@use "../scss/abstracts/mixins";
+/* BASE */
+@use "../scss/base/reset";
+@use "../scss/base/typography";
+/* COMPONENTS */
+@use "../scss/components/header";
+@use "../scss/components/index";
+@use "../scss/components/footer";

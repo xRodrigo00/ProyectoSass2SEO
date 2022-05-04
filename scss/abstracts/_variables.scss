@@ -1,0 +1,13 @@
+@import "../base/typography";
+$primary_color: rgb(47, 112, 47);
+$secondary_color: rgb(73, 186, 73);
+$background_nav: linear-gradient(to right, $primary_color, $secondary_color);
+$font_main: 'Roboto', sans-serif;
+$title_size: 3rem;
+
+/* MAPS */
+$atributos_index :(
+    principal: $primary_color,
+    borde: solid 2px $primary_color,
+    sombra_caja: 2px 2px 2px rgb(34, 255, 0)
+);

@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.principal {
+  #title {
+    @include title;
+  }
+  &__img {
+    @include img(600px, 500px);
+    margin: 0 245px 2rem;
+  }
+  &__description {
+    font-family: $font_main;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+.section1{
+  @include flexbox(row,space-between, center);
+  align-items: stretch;
+  &__content{
+    padding: 1rem;
+    width: 500px;
+    text-align: center;
+    border: map-get($atributos_index, borde);
+    box-shadow: map-get($atributos_index, sombra_caja );
+    &-title{
+      color: $primary_color;
+    }
+    &-img{
+      padding: 1rem 0;
+    }
+    &-description{
+      font-style: italic;
+    }
+  }
+}
+

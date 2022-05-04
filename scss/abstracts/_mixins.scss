@@ -1,0 +1,18 @@
+@import "../abstracts/variables";
+@mixin flexbox($position, $justify, $align) {
+  display: flex;
+  flex-direction: $position;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin title {
+  color: $primary_color;
+  text-align: center;
+  font-family: $font_main;
+  font-size: $title_size;
+  margin: 2rem 0;
+}
+@mixin img($width, $height) {
+    width: $width;
+    height: $height;
+}
